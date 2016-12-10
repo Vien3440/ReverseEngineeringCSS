@@ -1,0 +1,35 @@
+
+body{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.headLogo{
+  display: flex;
+  justify-content: space-between;
+}
+
+  header{
+  background-color: red;
+  height: 500px;
+  margin-top: 70px !important;
+  overflow: hidden;
+  text-align: center;
+}
+
+header >div> h1{
+  padding-top: 200px;
+  font-size: 50px;
+}
+
+header >div> h2{
+  font-size: 30px;
+}
+
+
+
+nav{
+background-color: rgba(44, 215, 209, 0.42);
+height: 500px;
+width: 100%;
+}
