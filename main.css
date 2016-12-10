@@ -2,8 +2,14 @@
 body{
   padding-left: 50px;
   padding-right: 50px;
+  overflow:hidden;
+   
+}
+/********TOP LOGO******/
+#navVisi{    position: absolute;
 }
 
+/********HEADER******/
 .headLogo{
   display: flex;
   justify-content: space-between;
@@ -13,7 +19,7 @@ body{
   background-color: red;
   height: 500px;
   margin-top: 70px !important;
-  overflow: hidden;
+  
   text-align: center;
 }
 
@@ -25,11 +31,24 @@ header >div> h1{
 header >div> h2{
   font-size: 30px;
 }
+/********NAV******/
 
+#panel{
+  background-color: #fff;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 500px;
+    
+   opacity: 0;
+    transition-duration: 0.5s;
+}
+#panel > ul {
+    padding-top: 200px;
+}
 
-
-nav{
-background-color: rgba(44, 215, 209, 0.42);
-height: 500px;
-width: 100%;
+/********FOOTER******/
+footer{
+    background-color: red;
 }
