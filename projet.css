@@ -61,7 +61,7 @@ article:nth-child(2n){
     height: 500px;
     width: 100%;
     text-align: center;
-    position: relative;
+  
     bottom: 500px;
 
    opacity: 0;
@@ -74,12 +74,14 @@ article:nth-child(2n){
 /********FOOTER******/
 
 footer{
-    position: fixed;
-    width: 100%;
+        width: 100%;
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    bottom: 480px;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 350px;
+    height: 40px;
+    margin-right: 110px;
+    background: #fff;
 }
 
 .footerLogo{
