@@ -2,8 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Tp1</title>
+        <title>Home home home joyeux noel</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css" media="all">
         <link rel="stylesheet" href="reset.css" media="all">
         <link rel="stylesheet" href="main.css" media="all">
     </head>
@@ -20,6 +21,9 @@
             <div>
                 <h1>Le Lorem Ipsum est simplement du faux texte </h1>
                 <h3>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h3>
+                <div>
+                  <h2>Lorem Ipsum<h2>
+                <div>
             </div>
         </header>
         <nav id="panel">
@@ -32,20 +36,19 @@
         <footer></footer>
         <script>
             function myFunction() {
-               
+               if((document.getElementById("panel") !== (document.getElementById("panel").style.opacity = "0")))
                   document.getElementById("panel").style.opacity = "1";
                   document.getElementById("navVisi").style.display = "none";
             }
-          
+
             function myFunction2() {
                 if((document.getElementById("panel") === (document.getElementById("panel").style.opacity = "0")))
-                {
-                
+                  document.getElementById("panel").style.opacity = "1";
                   document.getElementById("navVisi").style.display = "block";
-                 
+
                 }
-            }
-         
+
+
         </script>
     </body>
 </html>

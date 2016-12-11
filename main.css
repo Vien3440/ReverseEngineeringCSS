@@ -3,7 +3,7 @@ body{
   padding-left: 50px;
   padding-right: 50px;
   overflow:hidden;
-   
+
 }
 /********TOP LOGO******/
 #navVisi{    position: absolute;
@@ -15,22 +15,32 @@ body{
   justify-content: space-between;
 }
 
-  header{
-  background-color: red;
+header{
+color: #ef2424;
+  background-image:url(http://www.wallpapersxl.com/wallpapers/1920x1080/triangle/148949/triangle-pyramid-black-pink-hd-148949.jpg);
   height: 500px;
   margin-top: 70px !important;
-  
+
   text-align: center;
 }
 
-header >div> h1{
-  padding-top: 200px;
+header>div>h1{
+  padding-top: 150px;
   font-size: 50px;
 }
 
-header >div> h2{
+header>div>div>h2{
+  height: auto;
   font-size: 30px;
+  
+
 }
+
+header >div> h3{
+  margin: 50px;
+}
+
+
 /********NAV******/
 
 #panel{
@@ -40,7 +50,7 @@ header >div> h2{
     text-align: center;
     position: relative;
     bottom: 500px;
-    
+
    opacity: 0;
     transition-duration: 0.5s;
 }
