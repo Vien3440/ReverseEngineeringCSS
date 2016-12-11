@@ -1,0 +1,87 @@
+a:link{text-decoration:none; color:#6a4e65;}
+a:visited{text-decoration:none; color:#6a4e65;}
+a:active{text-decoration:none;}
+
+body{
+  padding-left: 50px;
+  padding-right: 50px;
+
+
+}
+/********TOP LOGO******/
+#navVisi{    position: absolute;
+}
+
+.headLogo{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/********SECTION/ARTICLE******/
+
+section{
+color: #ef2424;
+  background-image:url(http://www.wallpapersxl.com/wallpapers/1920x1080/triangle/148949/triangle-pyramid-black-pink-hd-148949.jpg);
+  height: 500px;
+
+  margin-top: 70px !important;
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+section>div>h1{
+  padding-top: 150px;
+  font-size: 50px;
+}
+
+section >div> h3{
+  margin: 50px;
+}
+
+article:nth-child(2n+1){
+   width: 60%;
+       height: 200px;
+       margin-top: 10px;
+       background-color: brown;
+}
+article:nth-child(2n){
+   width: 40%;
+    margin-top: 10px;
+       height: 200px;
+       background-color: gold;
+       justify-content: space-around;
+}
+
+/********NAV******/
+
+#panel{
+  background-color: #fff;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 500px;
+
+   opacity: 0;
+    transition-duration: 0.5s;
+}
+#panel > ul {
+    padding-top: 200px;
+}
+
+/********FOOTER******/
+
+footer{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 480px;
+}
+
+.footerLogo{
+  
+}

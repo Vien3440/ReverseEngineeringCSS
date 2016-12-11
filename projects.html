@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css" media="all">
+        <link rel="stylesheet" href="projet.css" media="all">
+    </head>
+    <body>
+        <div  class="headLogo">
+            <a href=""><img alt="img"></a>
+            <a>
+                <img id="navVisi" onclick="navOpcity1()" alt="img">
+                <img id="navNone" onclick="navOpcity0()" alt="img">
+            </a>
+        </div>
+        <section class="content">
+            <article class="post">
+                <h3>Le Lorem Ipsum </h3>
+                <p>Le Lorem Ipsum est simplement du faux texte</p>
+            </article>
+            <article class="post">
+                <h3>Le Lorem Ipsum </h3>
+                <p>Le Lorem Ipsum est simplement du faux texte</p>
+            </article>
+            <article class="post">
+                <h3>Le Lorem Ipsum </h3>
+                <p>Le Lorem Ipsum est simplement du faux texte</p>
+            </article>
+            <article class="post">
+                <h3>Le Lorem Ipsum </h3>
+                <p>Le Lorem Ipsum est simplement du faux texte</p>
+            </article> 
+        </section>
+        <nav id="panel">
+            <ul>
+                <li><a href="./projects.html">Formation</a></li>
+                <li>Formation</li>
+                <li>Formation</li>
+            </ul>
+        </nav>
+                <footer>
+                    <div>
+                        <p>Le Lorem Ipsum est simplement du faux texte </p>
+                    </div>
+                    <div class="footerLogo" >
+                        <a><img alt="img" src="http://www.viendev.fr/v2/css/img/imglogo/logoHeader7.png"  height="42" width="42"></a>
+                         <a><img alt="img" src="http://www.viendev.fr/v2/css/img/imglogo/logoHeader7.png" height="42" width="42"></a>
+                    </div>
+                    
+                </footer>
+        <script>
+            function navOpcity1() {
+               if((document.getElementById("panel") !== (document.getElementById("panel").style.opacity = "0")))
+                  document.getElementById("panel").style.opacity = "1";
+                  document.getElementById("navVisi").style.display = "none";
+                  document.getElementById("btnHover").style.zIndex  = "0";
+            }
+
+            function navOpcity0() {
+                if((document.getElementById("panel") === (document.getElementById("panel").style.opacity = "0")))
+                  document.getElementById("panel").style.opacity = "1";
+                  document.getElementById("navVisi").style.display = "block";
+                  document.getElementById("btnHover").style.zIndex  = "20";
+
+                }
+            
+
+        </script>
+    </body>
+</html>
