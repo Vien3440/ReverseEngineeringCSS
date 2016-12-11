@@ -1,4 +1,7 @@
+a:link{text-decoration:none; color:#6a4e65;}
+a:visited{text-decoration:none; color:#6a4e65;}
 
+a:active{text-decoration:none;}
 body{
   padding-left: 50px;
   padding-right: 50px;
@@ -29,11 +32,22 @@ header>div>h1{
   font-size: 50px;
 }
 
-header>div>div>h2{
+#btnHover{
   height: auto;
-  font-size: 30px;
-  
+  font-size: 25px;
+  position: absolute;
+  left: 45%;
+   border: 3px solid #6a4e65;
+  border-radius: 5px;
+ padding: 5px;
+z-index: 20;
 
+}
+
+#btnHover:hover{
+   background-color:#fff;
+   color:white;
+transition-duration: 0.5s;
 }
 
 header >div> h3{
@@ -59,6 +73,15 @@ header >div> h3{
 }
 
 /********FOOTER******/
+
 footer{
-    background-color: red;
+        width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 480px;
+}
+
+.footerLogo{
+  
 }

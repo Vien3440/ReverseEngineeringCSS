@@ -12,8 +12,8 @@
         <div  class="headLogo">
             <a href=""><img alt="img"></a>
             <a>
-                <img id="navVisi" onclick="myFunction()" alt="img">
-                <img id="navNone" onclick="myFunction2()" alt="img">
+                <img id="navVisi" onclick="navOpcity1()" alt="img">
+                <img id="navNone" onclick="navOpcity0()" alt="img">
             </a>
         </div>
         <header>
@@ -21,33 +21,44 @@
             <div>
                 <h1>Le Lorem Ipsum est simplement du faux texte </h1>
                 <h3>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h3>
-                <div>
-                  <h2>Lorem Ipsum<h2>
-                <div>
+                <div id="btnHover">
+                    <a href=""><h2>Lorem Ipsum</h2></a>
+                </div>
             </div>
         </header>
         <nav id="panel">
             <ul>
-                <li>Formation</li>
+                <li><a href="./projects.html">Formation</a></li>
                 <li>Formation</li>
                 <li>Formation</li>
             </ul>
         </nav>
-        <footer></footer>
+                <footer>
+                    <div>
+                        <p>Le Lorem Ipsum est simplement du faux texte </p>
+                    </div>
+                    <div class="footerLogo" >
+                        <a><img alt="img" src="http://www.viendev.fr/v2/css/img/imglogo/logoHeader7.png"  height="42" width="42"></a>
+                         <a><img alt="img" src="http://www.viendev.fr/v2/css/img/imglogo/logoHeader7.png" height="42" width="42"></a>
+                    </div>
+                    
+                </footer>
         <script>
-            function myFunction() {
+            function navOpcity1() {
                if((document.getElementById("panel") !== (document.getElementById("panel").style.opacity = "0")))
                   document.getElementById("panel").style.opacity = "1";
                   document.getElementById("navVisi").style.display = "none";
+                  document.getElementById("btnHover").style.zIndex  = "0";
             }
 
-            function myFunction2() {
+            function navOpcity0() {
                 if((document.getElementById("panel") === (document.getElementById("panel").style.opacity = "0")))
                   document.getElementById("panel").style.opacity = "1";
                   document.getElementById("navVisi").style.display = "block";
+                  document.getElementById("btnHover").style.zIndex  = "20";
 
                 }
-
+            
 
         </script>
     </body>
