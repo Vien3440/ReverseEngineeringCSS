@@ -8,13 +8,14 @@
         </head>
 <body>
     {% block body %}
-        <form method="get" action="{{path('test1')}}">
+        <form method="get" {#action="{{path('test1')}}"#}>
             <input name="num1" type="number"> 
             <input name="num2" type="number">
-            <input type="submit" value="égale ?"> 
+            <input type="submit" value="égale ?" id="test1"> 
         </form>
         <p id="result"></p> 
     {% endblock %}
-{% block javascripts %}{% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+{% block javascripts %}<script src="{{asset('script/testAjax1.js')}}"></script>{% endblock %}
 </body>
 </html>
